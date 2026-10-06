@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Skincare Coreano - Productos de cuidado facial, hidratación, limpieza y protección solar.">
+
+    <meta name="theme-color" content="#f7dfe3">
+
+    <title>Skincare Coreano | Belleza y cuidado de tu piel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div class="loader" id="loader">
+
+        <div class="loader-content">
+
+            <span>✿</span>
+
+            <p>
+                Skincare Coreano
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header" id="header">
+
+        <div class="header-contenido">
+
+            <!-- LOGO -->
+
+            <a href="#inicio" class="logo">
+
+                <span class="logo-decoracion">
+                    ♡
+                </span>
+
+                <div>
+
+                    <h1>
+                        Skincare
+                    </h1>
+
+                    <span>
+                        COREANO
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav
+                class="menu-principal"
+                id="menuPrincipal"
+                aria-label="Navegación principal">
+
+                <ul>
+
+                    <li>
+                        <a href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#nosotros">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#tipologias">
+                            Tipologías
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#productos">
+                            Productos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#pedidos">
+                            Pedidos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sucursales">
+                            Sucursales
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#preguntas">
+                            Preguntas
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- ACCIONES -->
+
+            <div class="header-acciones">
+
+                <button
+                    class="icono-header"
+                    id="searchBtn"
+                    type="button"
+                    aria-label="Buscar">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+
+                <button
+                    class="icono-header"
+                    id="qrBtn"
+                    type="button"
+                    aria-label="Código QR">
+
+                    <i class="fa-solid fa-qrcode"></i>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="carrito-icono"
+                    id="abrirCarrito"
+                    aria-label="Ver carrito"
+                    aria-controls="carritoPanel"
+                    aria-expanded="false">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span id="contadorCarrito">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         BUSCADOR
+    ====================================================== -->
+
+    <div
+        class="buscador-overlay"
+        id="buscadorOverlay"
+        aria-hidden="true">
+
+        <div class="buscador-contenido">
+
+            <button
+                class="cerrar-buscador"
+                id="cerrarBuscador"
+                type="button"
+                aria-label="Cerrar buscador">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <span>
+                ENCUENTRA TU FAVORITO
+            </span>
+
+
+            <h2>
+                ¿Qué estás buscando?
+            </h2>
+
+
+            <div class="buscador-input">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="buscarProducto"
+                    placeholder="Buscar producto..."
+                    autocomplete="off">
+
+            </div>
+
+
+            <div
+                id="resultadosBusqueda"
+                class="resultados-busqueda">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            class="hero"
+            id="inicio">
+
+            <div class="hero-decoracion decoracion-1">
+                ✿
+            </div>
+
+            <div class="hero-decoracion decoracion-2">
+                ♡
+            </div>
+
+            <div class="hero-decoracion decoracion-3">
+                ✦
+            </div>
+
+
+            <div class="hero-contenido">
+
+                <span class="etiqueta">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    BELLEZA · CUIDADO · BIENESTAR
+
+                </span>
+
+
+                <h2>
+
+                    Tu piel merece
+
+                    <em>
+                        sentirse bonita.
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    Descubre productos de skincare para crear una
+                    rutina sencilla, agradable y pensada para ti.
+
+                </p>
+
+
+                <div class="hero-botones">
+
+                    <a
+                        href="#productos"
+                        class="btn btn-principal">
+
+                        Ver productos
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#tipologias"
+                        class="btn btn-secundario">
+
+                        Ver categorías
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-beneficios">
+
+                    <div>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <span>
+                            Cuidado delicado
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        <span>
+                            Productos seleccionados
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>
+                            Compra fácil
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-imagen">
+
+                <div class="hero-circulo"></div>
+
+
+                <div class="hero-card">
+
+                    <div class="hero-card-icon">
+                        ♡
+                    </div>
+
+                    <span>
+                        BEAUTY
+                    </span>
+
+                    <strong>
+
+                        Glow
+                        <br>
+                        naturally
+
+                    </strong>
+
+                    <small>
+                        Cuida · Hidrata · Brilla
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FRASE
+        ================================================== -->
+
+        <section class="frase">
+
+            <div class="frase-linea"></div>
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <p>
+                "La belleza comienza cuando decides cuidar de ti."
+            </p>
+
+            <span>
+                SKINCARE COREANO
+            </span>
+
+            <div class="frase-linea"></div>
+
+        </section>
+
+
+        <!-- =================================================
+             NOSOTROS
+        ================================================== -->
+
+        <section
+            class="seccion nosotros"
+            id="nosotros">
+
+            <div class="nosotros-imagen">
+
+                <div class="imagen-decoracion"></div>
+
+                <div class="nosotros-card">
+
+                    <span>
+                        ♡
+                    </span>
+
+                    <strong>
+
+                        Tu momento,
+                        <br>
+                        tu ritual.
+
+                    </strong>
+
+                    <small>
+                        Self care everyday
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="nosotros-contenido">
+
+                <div class="titulo-seccion alineado-izquierda">
+
+                    <span>
+                        CONÓCENOS
+                    </span>
+
+                    <h2>
+
+                        Belleza que
+                        <em>
+                            se siente.
+                        </em>
+
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Somos una tienda especializada en productos de
+                    cuidado facial, inspirados en las rutinas de
+                    belleza coreana.
+
+                </p>
+
+
+                <p>
+
+                    Encontrarás diferentes tipologías de productos
+                    para limpieza, hidratación, tratamiento y
+                    protección solar.
+
+                </p>
+
+
+                <div class="beneficios">
+
+
+                    <div class="beneficio">
+
+                        <div class="beneficio-icono">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Productos seleccionados
+                            </strong>
+
+                            <span>
+                                Opciones para diferentes rutinas.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="beneficio">
+
+                        <div class="beneficio-icono">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Atención personalizada
+                            </strong>
+
+                            <span>
+                                Te ayudamos a elegir.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="beneficio">
+
+                        <div class="beneficio-icono">
+
+                            <i class="fa-solid fa-box"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Mayor y menor
+                            </strong>
+
+                            <span>
+                                Compra para ti o para tu negocio.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TIPOLOGÍAS
+        ================================================== -->
+
+        <section
+            class="seccion tipologias"
+            id="tipologias">
+
+            <div class="titulo-seccion">
+
+                <span>
+                    DESCUBRE NUESTRAS CATEGORÍAS
+                </span>
+
+                <h2>
+
+                    Elige tu tipo de
+                    <em>
+                        skincare.
+                    </em>
+
+                </h2>
+
+                <p>
+                    Explora nuestras principales tipologías de
+                    productos.
+                </p>
+
+            </div>
+
+
+            <div class="tipologias-grid">
+
+
+                <button
+                    class="tipo-card"
+                    type="button"
+                    data-categoria="todos">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <strong>
+                        Todos
+                    </strong>
+
+                    <span>
+                        Ver catálogo completo
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="tipo-card"
+                    type="button"
+                    data-categoria="limpieza">
+
+                    <i class="fa-solid fa-soap"></i>
+
+                    <strong>
+                        Limpieza
+                    </strong>
+
+                    <span>
+                        Limpiadores y desmaquillantes
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="tipo-card"
+                    type="button"
+                    data-categoria="hidratacion">
+
+                    <i class="fa-solid fa-droplet"></i>
+
+                    <strong>
+                        Hidratación
+                    </strong>
+
+                    <span>
+                        Cremas y mascarillas
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="tipo-card"
+                    type="button"
+                    data-categoria="serum">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                    <strong>
+                        Sérums
+                    </strong>
+
+                    <span>
+                        Tratamientos faciales
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="tipo-card"
+                    type="button"
+                    data-categoria="solar">
+
+                    <i class="fa-solid fa-sun"></i>
+
+                    <strong>
+                        Protección solar
+                    </strong>
+
+                    <span>
+                        Protección diaria
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="tipo-card"
+                    type="button"
+                    data-categoria="mascarillas">
+
+                    <i class="fa-solid fa-spa"></i>
+
+                    <strong>
+                        Mascarillas
+                    </strong>
+
+                    <span>
+                        Momentos de cuidado
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PRODUCTOS
+        ================================================== -->
+
+        <section
+            class="seccion productos"
+            id="productos">
+
+            <div class="titulo-seccion">
+
+                <span>
+                    ♡ SKINCARE FAVORITO ♡
+                </span>
+
+                <h2>
+
+                    Pequeños rituales,
+                    <em>
+                        grandes cambios.
+                    </em>
+
+                </h2>
+
+                <p>
+                    Encuentra productos para complementar
+                    tu rutina.
+                </p>
+
+            </div>
+
+
+            <!-- FILTROS -->
+
+            <div class="filtros">
+
+                <button
+                    class="filtro activo"
+                    type="button"
+                    data-categoria="todos">
+
+                    Todos
+
+                </button>
+
+
+                <button
+                    class="filtro"
+                    type="button"
+                    data-categoria="limpieza">
+
+                    Limpieza
+
+                </button>
+
+
+                <button
+                    class="filtro"
+                    type="button"
+                    data-categoria="hidratacion">
+
+                    Hidratación
+
+                </button>
+
+
+                <button
+                    class="filtro"
+                    type="button"
+                    data-categoria="serum">
+
+                    Sérums
+
+                </button>
+
+
+                <button
+                    class="filtro"
+                    type="button"
+                    data-categoria="solar">
+
+                    Solar
+
+                </button>
+
+
+                <button
+                    class="filtro"
+                    type="button"
+                    data-categoria="mascarillas">
+
+                    Mascarillas
+
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTOS -->
+
+            <div
+                class="productos-grid"
+                id="productosGrid">
+
+
+                <!-- PRODUCTO 1 -->
+
+                <article
+                    class="producto-card"
+                    data-categoria="mascarillas hidratacion"
+                    data-nombre="Mascarilla de avena">
+
+                    <div class="producto-imagen">
+
+                        <span class="producto-badge">
+                            FAVORITO
+                        </span>
+
+                        <img
+                            src="fotos/imagen1.jpg"
+                            alt="Mascarilla de avena"
+                            loading="lazy">
+
+
+                        <button
+                            class="producto-favorito"
+                            type="button"
+                            aria-label="Agregar a favoritos">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="producto-overlay">
+
+                            <button
+                                class="btn-ver"
+                                type="button"
+                                data-producto="Mascarilla de avena">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                Ver producto
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="producto-info">
+
+                        <span class="categoria">
+                            MASCARILLA
+                        </span>
+
+                        <h3>
+                            Mascarilla de avena
+                        </h3>
+
+                        <p>
+                            Una opción para complementar una rutina
+                            enfocada en hidratación y suavidad.
+                        </p>
+
+
+                        <div class="producto-footer">
+
+                            <strong>
+                                S/ 35.00
+                            </strong>
+
+
+                            <button
+                                class="btn-producto"
+                                type="button"
+                                data-producto="Mascarilla de avena"
+                                aria-label="Agregar producto">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article
+                    class="producto-card"
+                    data-categoria="serum hidratacion"
+                    data-nombre="Sérum de aloe vera">
+
+                    <div class="producto-imagen">
+
+                        <span class="producto-badge nuevo">
+                            ESPECIAL
+                        </span>
+
+                        <img
+                            src="fotos/imagen2.jpg"
+                            alt="Sérum de aloe vera"
+                            loading="lazy">
+
+
+                        <button
+                            class="producto-favorito"
+                            type="button"
+                            aria-label="Agregar a favoritos">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="producto-overlay">
+
+                            <button
+                                class="btn-ver"
+                                type="button"
+                                data-producto="Sérum de aloe vera">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                Ver producto
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="producto-info">
+
+                        <span class="categoria">
+                            SÉRUM
+                        </span>
+
+                        <h3>
+                            Sérum de aloe vera
+                        </h3>
+
+                        <p>
+                            Sérum ligero para complementar una rutina
+                            diaria de cuidado facial.
+                        </p>
+
+
+                        <div class="producto-footer">
+
+                            <strong>
+                                S/ 42.00
+                            </strong>
+
+
+                            <button
+                                class="btn-producto"
+                                type="button"
+                                data-producto="Sérum de aloe vera"
+                                aria-label="Agregar producto">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article
+                    class="producto-card"
+                    data-categoria="hidratacion"
+                    data-nombre="Crema hidratante">
+
+                    <div class="producto-imagen">
+
+                        <span class="producto-badge">
+                            FAVORITO
+                        </span>
+
+                        <img
+                            src="fotos/imagen3.jpg"
+                            alt="Crema hidratante"
+                            loading="lazy">
+
+
+                        <button
+                            class="producto-favorito"
+                            type="button"
+                            aria-label="Agregar a favoritos">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="producto-overlay">
+
+                            <button
+                                class="btn-ver"
+                                type="button"
+                                data-producto="Crema hidratante">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                Ver producto
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="producto-info">
+
+                        <span class="categoria">
+                            HIDRATANTE
+                        </span>
+
+                        <h3>
+                            Crema hidratante
+                        </h3>
+
+                        <p>
+                            Crema para complementar una rutina
+                            enfocada en mantener la hidratación.
+                        </p>
+
+
+                        <div class="producto-footer">
+
+                            <strong>
+                                S/ 55.00
+                            </strong>
+
+
+                            <button
+                                class="btn-producto"
+                                type="button"
+                                data-producto="Crema hidratante"
+                                aria-label="Agregar producto">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <article
+                    class="producto-card"
+                    data-categoria="solar"
+                    data-nombre="Heliocare 360 Gel">
+
+                    <div class="producto-imagen">
+
+                        <span class="producto-badge solar">
+                            PROTECCIÓN
+                        </span>
+
+                        <img
+                            src="fotos/imagen4.jpg"
+                            alt="Heliocare 360 Gel"
+                            loading="lazy">
+
+
+                        <button
+                            class="producto-favorito"
+                            type="button"
+                            aria-label="Agregar a favoritos">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+
+                        <div class="producto-overlay">
+
+                            <button
+                                class="btn-ver"
+                                type="button"
+                                data-producto="Heliocare 360 Gel">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                Ver producto
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="producto-info">
+
+                        <span class="categoria">
+                            PROTECCIÓN SOLAR
+                        </span>
+
+                        <h3>
+                            Heliocare 360 Gel
+                        </h3>
+
+                        <p>
+                            Producto pensado para complementar
+                            tu rutina diaria de protección solar.
+                        </p>
+
+
+                        <div class="producto-footer">
+
+                            <strong>
+                                S/ 69.00
+                            </strong>
+
+
+                            <button
+                                class="btn-producto"
+                                type="button"
+                                data-producto="Heliocare 360 Gel"
+                                aria-label="Agregar producto">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PEDIDOS
+        ================================================== -->
+
+        <section
+            class="seccion pedidos"
+            id="pedidos">
+
+            <div class="titulo-seccion">
+
+                <span>
+                    COMPRA CON NOSOTROS
+                </span>
+
+                <h2>
+
+                    Tú eliges cómo
+                    <em>
+                        comprar.
+                    </em>
+
+                </h2>
+
+                <p>
+                    Compra para uso personal o para tu negocio.
+                </p>
+
+            </div>
+
+
+            <div class="pedidos-grid">
+
+
+                <div class="pedido-card mayor">
+
+                    <div class="pedido-icono">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                    </div>
+
+                    <span>
+                        PARA NEGOCIOS
+                    </span>
+
+                    <h3>
+                        Pedidos por mayor
+                    </h3>
+
+                    <p>
+                        Ideal para tiendas, negocios y
+                        emprendimientos.
+                    </p>
+
+
+                    <button
+                        class="btn btn-pedido pedido-btn"
+                        type="button"
+                        data-tipo="Pedido por mayor">
+
+                        Solicitar información
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="pedido-card menor">
+
+                    <div class="pedido-icono">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                    </div>
+
+                    <span>
+                        PARA TI
+                    </span>
+
+                    <h3>
+                        Pedidos por menor
+                    </h3>
+
+                    <p>
+                        Elige tus productos favoritos y crea
+                        tu rutina.
+                    </p>
+
+
+                    <button
+                        class="btn btn-pedido pedido-btn"
+                        type="button"
+                        data-tipo="Pedido por menor">
+
+                        Solicitar cotización
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SUCURSALES
+        ================================================== -->
+
+        <section
+            class="seccion sucursales"
+            id="sucursales">
+
+            <div class="titulo-seccion">
+
+                <span>
+                    ENCUÉNTRANOS
+                </span>
+
+                <h2>
+
+                    Estamos más
+                    <em>
+                        cerca de ti.
+                    </em>
+
+                </h2>
+
+            </div>
+
+
+            <div class="sucursales-grid">
+
+
+                <div class="sucursal">
+
+                    <div class="sucursal-icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h3>
+                        Lima
+                    </h3>
+
+                    <p>
+                        Atención presencial y pedidos.
+                    </p>
+
+                    <span>
+                        Ver ubicación →
+                    </span>
+
+                </div>
+
+
+                <div class="sucursal">
+
+                    <div class="sucursal-icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h3>
+                        Abancay
+                    </h3>
+
+                    <p>
+                        Atención y distribución.
+                    </p>
+
+                    <span>
+                        Ver ubicación →
+                    </span>
+
+                </div>
+
+
+                <div class="sucursal">
+
+                    <div class="sucursal-icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h3>
+                        Piura
+                    </h3>
+
+                    <p>
+                        Atención y distribución.
+                    </p>
+
+                    <span>
+                        Ver ubicación →
+                    </span>
+
+                </div>
+
+
+                <div class="sucursal">
+
+                    <div class="sucursal-icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h3>
+                        Cajamarca
+                    </h3>
+
+                    <p>
+                        Atención y distribución.
+                    </p>
+
+                    <span>
+                        Ver ubicación →
+                    </span>
+
+                </div>
+
+
+                <div class="sucursal">
+
+                    <div class="sucursal-icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h3>
+                        Tarapoto
+                    </h3>
+
+                    <p>
+                        Atención y distribución.
+                    </p>
+
+                    <span>
+                        Ver ubicación →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PREGUNTAS FRECUENTES
+        ================================================== -->
+
+        <section
+            class="seccion preguntas"
+            id="preguntas">
+
+            <div class="titulo-seccion">
+
+                <span>
+                    AYUDA
+                </span>
+
+                <h2>
+
+                    Preguntas
+                    <em>
+                        frecuentes.
+                    </em>
+
+                </h2>
+
+                <p>
+                    Revisa las preguntas más frecuentes.
+                </p>
+
+            </div>
+
+
+            <div
+                class="preguntas-grid"
+                id="preguntasGrid">
+
+                <details class="pregunta">
+
+                    <summary>
+                        ¿Qué productos venden?
+                    </summary>
+
+                    <p>
+                        Contamos con productos de limpieza,
+                        hidratación, sérums, mascarillas y
+                        protección solar.
+                    </p>
+
+                </details>
+
+
+                <details class="pregunta">
+
+                    <summary>
+                        ¿Hacen envíos?
+                    </summary>
+
+                    <p>
+                        Realizamos pedidos y coordinamos el
+                        envío según la ubicación del cliente.
+                    </p>
+
+                </details>
+
+
+                <details class="pregunta">
+
+                    <summary>
+                        ¿Cómo puedo realizar una compra?
+                    </summary>
+
+                    <p>
+                        Puedes seleccionar tus productos y
+                        comunicarte con nosotros para coordinar
+                        tu pedido.
+                    </p>
+
+                </details>
+
+
+                <details class="pregunta">
+
+                    <summary>
+                        ¿Venden por mayor?
+                    </summary>
+
+                    <p>
+                        Sí. Contamos con pedidos por mayor
+                        para tiendas, negocios y emprendimientos.
+                    </p>
+
+                </details>
+
+
+                <details class="pregunta">
+
+                    <summary>
+                        ¿Dónde están ubicados?
+                    </summary>
+
+                    <p>
+                        Contamos con atención y distribución
+                        en Lima, Abancay, Piura, Cajamarca y Tarapoto.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QR
+        ================================================== -->
+
+        <section
+            class="seccion qr-seccion"
+            id="compartir">
+
+            <div class="qr-contenido">
+
+                <div>
+
+                    <span>
+                        COMPARTE NUESTRA PÁGINA
+                    </span>
+
+                    <h2>
+
+                        Lleva nuestro
+                        <em>
+                            skincare contigo.
+                        </em>
+
+                    </h2>
+
+                    <p>
+                        Escanea el código QR desde tu celular
+                        para visitar nuestra página.
+                    </p>
+
+
+                    <button
+                        class="btn btn-principal"
+                        id="descargarQR"
+                        type="button">
+
+                        <i class="fa-solid fa-download"></i>
+
+                        Descargar QR
+
+                    </button>
+
+                </div>
+
+
+                <div class="qr-box">
+
+                    <div id="codigoQR"></div>
+
+                    <small>
+                        Escanéame
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACTO
+        ================================================== -->
+
+        <section class="contacto">
+
+            <div class="contacto-decoracion">
+                ♡
+            </div>
+
+
+            <div class="contacto-contenido">
+
+                <span>
+                    ¿NECESITAS AYUDA?
+                </span>
+
+                <h2>
+
+                    Estamos para
+                    <em>
+                        consentirte.
+                    </em>
+
+                </h2>
+
+                <p>
+                    Escríbenos para encontrar productos
+                    adecuados para tu rutina.
+                </p>
+
+            </div>
+
+
+            <button
+                class="btn btn-contacto"
+                id="contactoBtn"
+                type="button">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Hablar por WhatsApp
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+
+            <!-- MARCA -->
+
+            <div class="footer-marca">
+
+                <a
+                    href="#inicio"
+                    class="logo footer-logo">
+
+                    <span class="logo-decoracion">
+                        ♡
+                    </span>
+
+                    <div>
+
+                        <h2>
+                            Skincare
+                        </h2>
+
+                        <span>
+                            COREANO
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+                    Cuidado, belleza e hidratación para
+                    hacer de tu rutina un momento especial.
+                </p>
+
+
+                <!-- REDES -->
+
+                <div class="redes-sociales">
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="TikTok">
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="WhatsApp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="Pinterest">
+
+                        <i class="fa-brands fa-pinterest-p"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="Telegram">
+
+                        <i class="fa-brands fa-telegram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="X">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="red-social"
+                        aria-label="Snapchat">
+
+                        <i class="fa-brands fa-snapchat"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPLORA -->
+
+            <div class="footer-columna">
+
+                <h4>
+                    Explora
+                </h4>
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+
+                <a href="#tipologias">
+                    Tipologías
+                </a>
+
+                <a href="#productos">
+                    Productos
+                </a>
+
+                <a href="#pedidos">
+                    Pedidos
+                </a>
+
+                <a href="#sucursales">
+                    Sucursales
+                </a>
+
+            </div>
+
+
+            <!-- PRODUCTOS -->
+
+            <div class="footer-columna">
+
+                <h4>
+                    Productos
+                </h4>
+
+                <a href="#productos">
+                    Mascarillas
+                </a>
+
+                <a href="#productos">
+                    Sérums
+                </a>
+
+                <a href="#productos">
+                    Hidratantes
+                </a>
+
+                <a href="#productos">
+                    Protección solar
+                </a>
+
+                <a href="#productos">
+                    Limpieza facial
+                </a>
+
+            </div>
+
+
+            <!-- CONTACTO -->
+
+            <div class="footer-columna contacto-footer">
+
+                <h4>
+                    Contáctanos
+                </h4>
+
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +51 999 999 999
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    contacto@skincare.com
+
+                </p>
+
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Lima, Perú
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                ©
+                <span id="anio"></span>
+
+                Skincare Coreano.
+
+                Todos los derechos reservados.
+
+            </p>
+
+
+            <p>
+
+                Hecho con
+                <span>♡</span>
+                para tu piel.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MODAL PRODUCTO
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="productoModal"
+        aria-hidden="true">
+
+        <div class="modal-contenido">
+
+            <button
+                class="modal-cerrar"
+                id="cerrarModal"
+                type="button"
+                aria-label="Cerrar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="modal-icono">
+                ♡
+            </div>
+
+
+            <span>
+                SKINCARE COREANO
+            </span>
+
+
+            <h2 id="modalProducto">
+                Producto
+            </h2>
+
+
+            <p>
+                Agrega este producto a tu pedido y continúa
+                disfrutando de tu rutina.
+            </p>
+
+
+            <button
+                class="btn btn-modal"
+                id="modalAgregar"
+                type="button">
+
+                Agregar al pedido
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL QR
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="qrModal"
+        aria-hidden="true">
+
+        <div class="modal-contenido qr-modal">
+
+            <button
+                class="modal-cerrar"
+                id="cerrarQR"
+                type="button"
+                aria-label="Cerrar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="modal-icono">
+
+                <i class="fa-solid fa-qrcode"></i>
+
+            </div>
+
+
+            <span>
+                COMPARTIR
+            </span>
+
+
+            <h2>
+                Escanea nuestro QR
+            </h2>
+
+
+            <div id="codigoQRModal"></div>
+
+
+            <p>
+                Escanea este código desde tu celular para
+                visitar nuestra página.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+
+        <div class="toast-icono">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                ¡Agregado!
+            </strong>
+
+            <span id="toastMensaje">
+                Producto agregado a tu pedido.
+            </span>
+
+        </div>
+
+    </div>
+
+    <aside
+        class="carrito-panel"
+        id="carritoPanel"
+        aria-label="Tu carrito"
+        aria-hidden="true">
+        <div class="carrito-cabecera">
+            <h2>Tu carrito</h2>
+            <button
+                class="carrito-cerrar"
+                id="cerrarCarrito"
+                type="button"
+                aria-label="Cerrar carrito">
+                Cerrar
+            </button>
+        </div>
+        <div class="carrito-items" id="carritoItems"></div>
+        <div class="carrito-pie">
+            <p class="carrito-total">Total: <strong id="carritoTotal">S/ 0.00</strong></p>
+            <button
+                class="btn btn-principal carrito-cotizar"
+                id="cotizarCarrito"
+                type="button">
+                Solicitar cotización
+            </button>
+            <button
+                class="carrito-vaciar"
+                id="vaciarCarrito"
+                type="button">
+                Vaciar carrito
+            </button>
+        </div>
+    </aside>
+
+    <button
+        class="btn-chat"
+        id="chatbotBoton"
+        type="button"
+        aria-label="Abrir asistente"
+        aria-expanded="false"
+        aria-controls="chatbot">
+        <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+    </button>
+
+    <section
+        class="chat-box"
+        id="chatbot"
+        aria-label="Asistente virtual"
+        aria-hidden="true">
+
+        <div class="chat-header">
+            <div>
+                <strong>Asistente Skincare Coreano</strong>
+                <small>Estamos para ayudarte</small>
+            </div>
+            <button
+                class="cerrar-chat"
+                id="cerrarChatbot"
+                type="button"
+                aria-label="Cerrar asistente">
+                &times;
+            </button>
+        </div>
+
+        <div
+            class="chat-mensajes"
+            id="chatbotMensajes"
+            aria-live="polite">
+            <div class="mensaje bot">
+                <div class="mensaje-avatar" aria-hidden="true">✿</div>
+                <div class="mensaje-contenido">
+                    <p>👋 ¡Hola! Bienvenido/a a Skincare Coreano.</p>
+                    <p>Puedo ayudarte con productos, precios, envíos, pagos, pedidos y sucursales.</p>
+                    <strong>¿En qué puedo ayudarte?</strong>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="preguntas-chat"
+            id="chatbotPreguntas"
+            aria-label="Preguntas frecuentes">
+        </div>
+
+        <form class="chat-form" id="chatbotForm">
+            <input
+                type="text"
+                id="chatbotInput"
+                placeholder="Escribe tu pregunta..."
+                autocomplete="off"
+                aria-label="Escribe tu pregunta"
+                required>
+            <button type="submit" aria-label="Enviar mensaje">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+        </form>
+    </section>
+
+
+    <!-- =====================================================
+         BOTÓN VOLVER ARRIBA
+    ====================================================== -->
+
+    <button
+        class="volver-arriba"
+        id="volverArriba"
+        type="button"
+        aria-label="Volver arriba">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         QRCODE.JS
+    ====================================================== -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
